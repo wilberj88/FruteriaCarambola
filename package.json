@@ -1,0 +1,27 @@
+{
+  "name": "coronaMexBot",
+  "description": "Servidor intermedio para el master de IA de Three Points",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Google Inc.",
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "start": "node FrutasCarambolaBot.js",
+    "debug": "node FrutasCarambolaBot.js",
+    "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^1.11.0",
+    "actions-on-google": "^2.2.0",
+    "axios": "^0.21.1",
+    "dialogflow": "^0.6.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1",
+    "google-spreadsheet": "^3.0.13",
+    "node-schedule": "^1.3.2",
+    "node-telegram-bot-api": "^0.40.0"
+  }
+}
